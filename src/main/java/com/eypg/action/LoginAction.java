@@ -124,7 +124,7 @@ public class LoginAction extends BaseAction
         if (u2 != null) {
           try
           {
-            if ("0".equals(u2.getMobileCheck()))
+            if (u2.getMobileCheck().equals("0"))
             {
               Struts2Utils.renderJson(u2, new String[0]);
               user.setIpAddress(ip);
